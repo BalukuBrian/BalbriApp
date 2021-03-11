@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "17365050341",
+    "project_id": "balbriapp-ee275",
+    "storage_bucket": "balbriapp-ee275.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:17365050341:android:3477d0536c5ca150de050c",
+        "android_client_info": {
+          "package_name": "com.example.balbriapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "17365050341-94993jf8ahit495saak5htugnp6asi33.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.balbriapp",
+            "certificate_hash": "829c233acc3c72e328d4cb98a9addd55d63e88c7"
+          }
+        },
+        {
+          "client_id": "17365050341-s9mrv2n03nu3hi5cpmi1j09fpull2fdo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA2gMQamyhRXisZUfSOJ2ThGGza9oZUMSU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "17365050341-s9mrv2n03nu3hi5cpmi1j09fpull2fdo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
