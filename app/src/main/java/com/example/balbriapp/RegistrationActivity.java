@@ -24,7 +24,7 @@ public class RegistrationActivity extends AppCompatActivity {
     private Button btnSignIn_reg ;
     private Button btnSignUp_reg ;
 
-    //Firebase
+    //Firebase code
     private FirebaseAuth mAuth;
     private ProgressDialog mDialog;
 
