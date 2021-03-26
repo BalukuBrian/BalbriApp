@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
     private Button btnSignIn;
     private Button btnSignUp;
 
-    //Firebase
+    /* Firebase */
     private FirebaseAuth mAuth;
     private ProgressDialog mDialog;
 
@@ -35,8 +35,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        /* Firebase */
         mAuth =  FirebaseAuth.getInstance();
-
         mDialog = new ProgressDialog(this);
 
 
@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
         btnSignIn = findViewById(R.id.btnsigin);
         btnSignUp = findViewById(R.id.btnsignup);
 
-        // complete signing in
+        /* complete signing in */
         btnSignIn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -85,7 +85,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-        // for SignUp
+        /* for SignUp */
         btnSignUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

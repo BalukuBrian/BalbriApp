@@ -24,7 +24,7 @@ public class RegistrationActivity extends AppCompatActivity {
     private Button btnSignIn_reg ;
     private Button btnSignUp_reg ;
 
-    //Firebase code
+    /* Firebase code */
     private FirebaseAuth mAuth;
     private ProgressDialog mDialog;
 
@@ -33,18 +33,17 @@ public class RegistrationActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registration);
 
-        mAuth =  FirebaseAuth.getInstance();
-
+        /* Firebase */
+        mAuth   =  FirebaseAuth.getInstance();
         mDialog = new ProgressDialog(this);
 
+        /* variables */
+        email_reg      =  findViewById(R.id.email_login);
+        password_reg   =  findViewById(R.id.password_login);
+        btnSignIn_reg  =  findViewById(R.id.btnsignin_reg);
+        btnSignUp_reg  =  findViewById(R.id.btnsigup_reg);
 
-
-        email_reg = findViewById(R.id.email_login);
-        password_reg = findViewById(R.id.password_login);
-        btnSignIn_reg  = findViewById(R.id.btnsignin_reg);
-        btnSignUp_reg  = findViewById(R.id.btnsigup_reg);
-
-        //complete login
+        /* complete login */
         btnSignIn_reg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -52,7 +51,7 @@ public class RegistrationActivity extends AppCompatActivity {
             }
         });
 
-        // for Sign Up
+        /* for Sign Up */
         btnSignUp_reg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -80,7 +79,7 @@ public class RegistrationActivity extends AppCompatActivity {
                             startActivity(new Intent(getApplicationContext(), HomeActivity.class));
                             Toast.makeText(getApplicationContext(), "SignUp Complete", Toast.LENGTH_SHORT).show();
                         }else{
-                            Toast.makeText(getApplicationContext(), "Problem", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getApplicationContext(), "Problem Signing Up", Toast.LENGTH_SHORT).show();
                             mDialog.dismiss();
                         }
 
@@ -89,5 +88,7 @@ public class RegistrationActivity extends AppCompatActivity {
 
             }
         });
+
+
     }
 }
